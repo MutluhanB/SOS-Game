@@ -73,9 +73,7 @@ function checkStatus(array){
   checkstr = ""
   var index = 2;
   for(var i = 0 ; i<3 ; i++){
-    console.log("array el" + array[i][index-i])
     checkstr=checkstr.concat(array[i][index-i])
-    console.log("cstr" + checkstr)
   }
   if(isOver(checkstr,par,table)){
     return
@@ -109,7 +107,7 @@ function fill(cell,i,j){
 }
 var array = create2dArray(3)
 fillArray(array)
-console.log(array)
+
 
 var table = document.querySelector(".gameboard")
 var one = document.getElementsByTagName("th")[0]
