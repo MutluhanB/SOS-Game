@@ -89,11 +89,11 @@ function checkStatus(array){
 
 function fill(cell,i,j){
   if(cell.textContent == ""){
-    cell.textContent = "X"
+    cell.textContent = "S"
     cell.style.fontSize = "xx-large"
     array[i][j] = "X"
   }
-  else if(cell.textContent == "X"){
+  else if(cell.textContent == "S"){
     cell.textContent = "O"
     cell.style.fontSize = "xx-large"
     array[i][j] = "O"
